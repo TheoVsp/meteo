@@ -1,0 +1,13 @@
+<?php
+//////////////////////////////////////////////////////////////////
+// CURL FUNCTIONS
+//////////////////////////////////////////////////////////////////
+require "vendor/autoload.php";
+
+use R2n\R2nCurl;
+
+class GlobalCurl{
+    public static R2nCurl $curl;
+}
+
+GlobalCurl::$curl = new R2nCurl(GlobalLogger::$logger);

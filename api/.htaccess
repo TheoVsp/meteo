@@ -1,0 +1,8 @@
+Options -Indexes
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php [L]
+
+Header set X-Frame-Options "DENY"
+Header set X-Content-Type-Options "nosniff"

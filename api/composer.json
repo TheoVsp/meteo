@@ -1,0 +1,31 @@
+{
+	"require" : {
+		"r2n/r2n-php-lib-log":"2.*",
+		"r2n/r2n-php-lib-curl":"1.*",
+		"r2n/r2n-php-lib-pg-database":"1.*",
+		"r2n/r2n-php-lib-mail":"1.*",
+		"mjaschen/phpgeo": "^3.1",
+      "ext-pdo": "*",
+      "ext-zlib": "*"
+    },
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://packagist.org",
+			"options": {
+				"ssl": {
+					"verify_peer": false
+				}
+			}
+		}
+	, {
+			"type": "composer",
+			"url": "http://srn01bio2.i.ragt.fr:8791/repository/r2n-composer/"
+		}
+	],
+	"config": {
+		"preferred-install": "dist",
+		"disable-tls": true,
+		"secure-http": false
+	}
+}
